@@ -1,0 +1,33 @@
+.outer{
+    overflow-y: auto;
+    height:350px;
+    }
+
+.outer table{
+    width: 100%;
+    table-layout: fixed; 
+    border : 1px solid black;
+    border-spacing: 1px;
+    font-size: 20px;
+}
+
+.outer table th {
+        text-align: left;
+        top:0;
+        position: sticky;
+        background-color: black;
+        color: white;  
+}
+
+    @media print {
+        tr.vendorListHeading {
+            background-color: #1a4567 !important;
+            -webkit-print-color-adjust: exact; 
+        }
+    }
+    
+    @media print {
+        .vendorListHeading th {
+            color: white !important;
+        }
+    }
